@@ -33,7 +33,7 @@ function revealAllBombs() {
   cells.forEach(cell => {
     const cellType = cell.dataset.type;
     if (cellType === "B") {
-      cell.src = "../app/bomba.png"; // Revela a imagem da bomba
+      cell.src = "../media/img/bomba.png"; // Revela a imagem da bomba
     }
   });
 }
@@ -44,7 +44,7 @@ const boardElement = document.getElementById("euamojessica");
 for (let i = 0; i < rows; i++) {
   for (let j = 0; j < cols; j++) {
     let cellValue = board[i][j];
-    let imgSrc = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAACVBMVEW9vb3///97e3uVBMaVAAAAHklEQVQI12MIDQ0NARFBDAEMDFzkEl6rVq1i0AISAIlSC03msuDYAAAAAElFTkSuQmCC"; // Caminho da imagem coberta inicial
+    let imgSrc = "../media/img/show/vazio.png"; // Caminho da imagem coberta inicial
     // Cria a célula do tabuleiro
     const img = document.createElement("img");
     img.id = "checkCel";
@@ -67,13 +67,13 @@ document.addEventListener("click", (event) => {
     // Revela a célula apenas se ainda não estiver revelada
     if (!revealed) {
       if (cellType === "B") {
-        cell.src = "../app/bomba.png"; // Caminho da imagem de bomba revelada
+        cell.src = "../media/img/bomba.png"; // Caminho da imagem de bomba revelada
         gameOver = true; // Marca o jogo como encerrado
         revealAllBombs(); // Revela todas as bombas
       } else if (cellType > 0) {
-        cell.src = `../app/${cellType}.png`; // Revela a imagem do número correto
+        cell.src = `../media/img/show/${cellType}.png`; // Revela a imagem do número correto
       } else {
-        cell.src = "../app/nada.png"; // Revela a célula vazia
+        cell.src = "../media/img/nada.png"; // Revela a célula vazia
       }
       cell.dataset.revealed = "true"; // Atualiza o estado para "revelado"
     }
