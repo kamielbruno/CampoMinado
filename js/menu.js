@@ -25,9 +25,6 @@ function addMenuEventListeners() {
   });
 }
 
-document.getElementById("open_btn").addEventListener("click", function () {
-  document.getElementById("Barra-Lateral").classList.toggle("open-sidebar");
-});
 
 // Função para atualizar o menu com base na página atual
 function updateMenu(page) {
