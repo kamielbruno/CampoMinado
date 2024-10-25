@@ -23,15 +23,65 @@
     <nav id="Barra-Lateral">
       <div id="carregar-menu"></div>
     </nav>
-    <main>
-      <div class="quiz">
 
-          
+    <div class="organizeGame">
+      <!-- game control -->
+      <div class="controlClass">
+        <!-- zoom in -->
+        <div class="controlInsideClick zoomIn">
+            <img src="../media/img/zoomin.png" alt="">
+        </div>
+        <!-- zoom out -->
+        <div class="controlInsideClick zoomOut">
+          <img src="../media/img/zoomout.png" alt="">
+
+        </div>
+        <!-- zoom out -->
+        <div class="controlInsideClick zoomIn">
+          <img src="../media/img/bandeiraControl.png" alt="">
+
+        </div>
+        <!-- zoom out -->
+        <div class="controlInsideClick zoomIn">
+          <img src="../media/img/hint.png" alt="">
+
+        </div>
       </div>
-    </main>
-    <script>
-      loadMenu("jogo.html");
-      showQuestion(currentQuestion);
-    </script>
+
+      <div class="mainCampoMinado">
+        <div class="capsulaFromCampo scoreBoardSystem">
+          <!-- ScoreBoard -->
+          <!-- TOTAL DE BOMBAS 2 -->
+          <div class="insideCapsulaFromScore bombsCheck">
+            <img src="../media/img/time00.png" id="counterNumber1" alt=""/>
+            <img src="../media/img/time01.png" id="counterNumber2" alt=""/>
+            <img src="../media/img/time00.png" id="counterNumber3" alt=""/>
+          </div>
+          <!-- RESET -->
+          <div class="insideCapsulaFromScore carinha">
+            <img id="carinhaIdReset" src="../media/img/carinha.png" alt="carinha_que_reseta"
+            />
+          </div>
+          <!-- TIME 'clock -->
+          <div class="insideCapsulaFromScore clockCheck">
+            <img id="grado01" src="../media/img/time00.png" alt=""/>
+            <img id="grado02"  src="../media/img/time00.png" alt=""/>
+            <img id="grado03"  src="../media/img/time00.png" alt=""/>
+          </div>
+        </div>
+        <div class="capsulaFromCampo realGamePass" id="euamojessica">
+          <!-- Real Game -->
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+    <script>loadMenu("jogo.html");showQuestion(currentQuestion);</script>
+    <script src="../js/handle.js"></script>
+    <script src="../js/functions.js"></script>
+    <script src="../js/utils.js"></script>
   </body>
 </html>
