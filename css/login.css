@@ -10,7 +10,7 @@
 }
 
 h2 {
-  color: #fff;
+  color: #0e1a0c;
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: 300;
@@ -25,9 +25,9 @@ h2 {
   width: 100%;
   padding: 15px;
   background: none;
-  border: 2px solid #fff;
+  border: 2px solid #0e1a0c;
   border-radius: 10px;
-  color: #fff;
+  color: #0e1a0c;
   font-size: 16px;
   outline: none;
 }
@@ -36,7 +36,7 @@ h2 {
   position: absolute;
   top: 50%;
   left: 15px;
-  color: #fff;
+  color: #0e1a0c;
   font-size: 16px;
   pointer-events: none;
   transform: translateY(-50%);
@@ -53,7 +53,7 @@ h2 {
 
 .login-btn {
   background-color: rgb(97, 205, 78);
-  color: #fff;
+  color: #0e1a0c;
   padding: 15px;
   border: none;
   border-radius: 10px;
@@ -70,11 +70,11 @@ h2 {
 .signup-text {
   margin-top: 20px;
   font-size: 14px;
-  color: #fff;
+  color: #0e1a0c;
 }
 
 .signup-text a {
-  color: #fff;
+  color: #0e1a0c;
   text-decoration: underline;
 }
 
