@@ -87,3 +87,7 @@ body {
 .cor-verde {
   color: #0b2809;
 }
+.botao-cancelar-voltar{
+  padding: 10px;
+  background-color: transparent;
+}
