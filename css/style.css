@@ -76,13 +76,22 @@ body {
   .imagem-dica {
     max-width: 100px;
   }
+  video{
+    width: 300px;
+  }
+  img{
+    width: 300px;
+  }
 }
 .imagem-dica-pagina {
   text-align: center;
 }
 @media (max-width: 480px) {
-  .imagem-dica-pagina {
-    width: 10px;
+  .dicas img{
+    width: 100px;height: 100px;
+  }
+  .texto-dica{
+    font-size: 15px;
   }
 }
 .cor-verde {
