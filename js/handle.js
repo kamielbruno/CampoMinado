@@ -78,6 +78,11 @@ document.addEventListener("click", (event) => {
                 gameOver = true; // Marca o jogo como encerrado
                 revealAllBombs(); // Revela todas as bombas
                 clock.stopTimer(); // Para o cronômetro
+                
+                // Define os valores como "notwork" ao encontrar uma bomba
+                document.getElementById("grado01").value = "notwork";
+                document.getElementById("grado02").value = "notwork";
+                document.getElementById("grado03").value = "notwork";
             } else if (cellType > 0) {
                 cell.src = `../media/img/show/${cellType}.png`; // Revela a imagem do número correto
             } else {
@@ -85,11 +90,15 @@ document.addEventListener("click", (event) => {
             }
             cell.dataset.revealed = "true"; // Atualiza o estado para "revelado"
         }
-    }
-    // Reinicia o jogo ao clicar na carinha3
-    const carinhaElement = document.querySelector('.carinha');
-    carinhaElement.addEventListener('click', function () {
-        window.location.reload(); // Recarrega a página
-    });
 
+        // Se o cronômetro ainda não foi iniciado, inicie-o
+        clock.startTimer(); // Inicia o cronômetro se não estiver em execução
+    }
+});
+
+// Reinicia o jogo ao clicar na carinha3
+const carinhaElement = document.querySelector('.carinha');
+carinhaElement.addEventListener('click', function () {
+    window.location.reload(); // Recarrega a página
+    clock.resetTimer(); // Reseta o cronômetro ao reiniciar o jogo
 });
