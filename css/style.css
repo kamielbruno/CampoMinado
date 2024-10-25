@@ -1,0 +1,89 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  font-family: Arial, sans-serif;
+  background-color: rgb(210, 218, 139);
+}
+
+.detalhes-link {
+  color: #133a11;
+  text-decoration: none;
+}
+.detalhes-link:hover {
+  color: #12a708;
+}
+.index-parte {
+  margin: 4%;
+  color: #133a11;
+}
+.titulo-index {
+  text-align: center;
+  color: #1e6e19;
+}
+.index-conteudo {
+  text-indent: 2%;
+}
+.meus-links {
+  margin-top: auto;
+  padding: 20px;
+}
+.agrodefundo {
+  background-image: url(../media/AgroUrbano.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 150% 100%;
+  background-position-x: 43%;
+}
+.titulo-dicas {
+  text-align: center;
+  color: #1e6e19;
+}
+.dicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 10px;
+  text-align: center;
+}
+.imagem-dica {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+.texto-dica {
+  margin: 0;
+  font-size: 16px;
+  max-width: 100%;
+}
+.lado-dicas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .lado-dicas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .lado-dicas {
+    grid-template-columns: 1fr;
+  }
+  .imagem-dica {
+    max-width: 100px;
+  }
+}
+.imagem-dica-pagina {
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .imagem-dica-pagina {
+    width: 10px;
+  }
+}
+.cor-verde {
+  color: #0b2809;
+}

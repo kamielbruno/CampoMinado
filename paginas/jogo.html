@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/jogo.css" />
+    <link rel="icon" type="image/png" href="../media/AgroUrbano.png" />
+    <script type="module" src="../js/script.js" defer></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/jogo.js"></script>
+    <title>Jogo</title>
+  </head>
+  <body>
+    <nav id="Barra-Lateral">
+      <div id="carregar-menu"></div>
+    </nav>
+    <main>
+      <div class="quiz">
+        <h1>Quiz AgroUrbano</h1>
+        <br /><br />
+        <form id="quiz-Formulario">
+          <!-- Pergunta 1 - Fácil -->
+          <div class="question-container" id="questao1">
+            <div class="questao">1. O que é Agricultura de Precisão?</div>
+            <ul class="options">
+              <li>
+                <input type="radio" name="q1" id="q1a" value="A" /><label
+                  for="q1a"
+                >
+                  A) Uma técnica de plantio aleatória.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q1" id="q1b" value="B" /><label
+                  for="q1b"
+                >
+                  B) Uso de tecnologia para otimizar a produção agrícola.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q1" id="q1c" value="C" /><label
+                  for="q1c"
+                >
+                  C) Método de irrigação tradicional.</label
+                >
+              </li>
+            </ul>
+            <button type="button" class="submit-btn" onclick="nextQuestion(1)">
+              Próxima Pergunta
+            </button>
+          </div>
+
+          <!-- Pergunta 2 - Fácil -->
+          <div class="question-container" id="questao2">
+            <div class="questao">
+              2. Qual é uma das principais vantagens da Agricultura Sustentável?
+            </div>
+            <ul class="options">
+              <li>
+                <input type="radio" name="q2" id="q2a" value="A" /><label
+                  for="q2a"
+                >
+                  A) Uso intensivo de produtos químicos.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q2" id="q2b" value="B" /><label
+                  for="q2b"
+                >
+                  B) Preservação da biodiversidade e melhoria da saúde do
+                  solo.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q2" id="q2c" value="C" /><label
+                  for="q2c"
+                >
+                  C) Redução da área cultivada.</label
+                >
+              </li>
+            </ul>
+            <button type="button" class="submit-btn" onclick="nextQuestion(2)">
+              Próxima Pergunta
+            </button>
+          </div>
+
+          <!-- Pergunta 3 - Média -->
+          <div class="question-container" id="questao3">
+            <div class="questao">
+              3. O que é o "teorema de eficiência de aplicação" na Agricultura
+              de Precisão?
+            </div>
+            <ul class="options">
+              <li>
+                <input type="radio" name="q3" id="q3a" value="A" /><label
+                  for="q3a"
+                >
+                  A) Avaliação da eficiência de diferentes variedades de
+                  sementes.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q3" id="q3b" value="B" /><label
+                  for="q3b"
+                >
+                  B) Medida da precisão na aplicação de insumos e sua eficiência
+                  no aumento da produção.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q3" id="q3c" value="C" /><label
+                  for="q3c"
+                >
+                  C) Cálculo do custo-benefício das máquinas agrícolas.</label
+                >
+              </li>
+            </ul>
+            <button type="button" class="submit-btn" onclick="nextQuestion(3)">
+              Próxima Pergunta
+            </button>
+          </div>
+
+          <!-- Pergunta 4 - Média -->
+          <div class="question-container" id="questao4">
+            <div class="questao">
+              4. O que é "Sistemas de Informação Geográfica" (SIG) e como ele é
+              usado em Agricultura de Precisão?
+            </div>
+            <ul class="options">
+              <li>
+                <input type="radio" name="q4" id="q4a" value="A" /><label
+                  for="q4a"
+                >
+                  A) Sistema para gerenciamento de dados de solo e clima para
+                  melhorar a gestão da propriedade.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q4" id="q4b" value="B" /><label
+                  for="q4b"
+                >
+                  B) Sistema para monitorar a saúde dos trabalhadores
+                  agrícolas.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q4" id="q4c" value="C" /><label
+                  for="q4c"
+                >
+                  C) Sistema para otimizar o uso de água na irrigação.</label
+                >
+              </li>
+            </ul>
+            <button type="button" class="submit-btn" onclick="nextQuestion(4)">
+              Próxima Pergunta
+            </button>
+          </div>
+
+          <!-- Pergunta 5 - Média -->
+          <div class="question-container" id="questao5">
+            <div class="questao">
+              5. Qual é a função da "análise de variabilidade do solo" em
+              Agricultura de Precisão?
+            </div>
+            <ul class="options">
+              <li>
+                <input type="radio" name="q5" id="q5a" value="A" /><label
+                  for="q5a"
+                >
+                  A) Identificar variações na qualidade do solo para otimizar a
+                  aplicação de fertilizantes.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q5" id="q5b" value="B" /><label
+                  for="q5b"
+                >
+                  B) Determinar a quantidade de água necessária para
+                  irrigação.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q5" id="q5c" value="C" /><label
+                  for="q5c"
+                >
+                  C) Medir a temperatura do solo.</label
+                >
+              </li>
+            </ul>
+            <button type="button" class="submit-btn" onclick="nextQuestion(5)">
+              Próxima Pergunta
+            </button>
+          </div>
+
+          <!-- Pergunta 6 - Difícil -->
+          <div class="question-container" id="questao6">
+            <div class="questao">
+              6. Como a integração de "Internet das Coisas" (IoT) pode melhorar
+              a sustentabilidade agrícola?
+            </div>
+            <ul class="options">
+              <li>
+                <input type="radio" name="q6" id="q6a" value="A" /><label
+                  for="q6a"
+                >
+                  A) Monitorando e controlando em tempo real variáveis
+                  ambientais para reduzir desperdícios e otimizar o uso de
+                  recursos.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q6" id="q6b" value="B" /><label
+                  for="q6b"
+                >
+                  B) Controlando a produção de alimentos a partir de sensores de
+                  qualidade do solo.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q6" id="q6c" value="C" /><label
+                  for="q6c"
+                >
+                  C) Automatizando o transporte de produtos agrícolas.</label
+                >
+              </li>
+            </ul>
+            <button type="button" class="submit-btn" onclick="nextQuestion(6)">
+              Próxima Pergunta
+            </button>
+          </div>
+
+          <!-- Pergunta 7 - Difícil -->
+          <div class="question-container" id="questao7">
+            <div class="questao">
+              7. O que é o conceito de "Footprint Ecológico" e como ele se
+              relaciona com a Agricultura Sustentável?
+            </div>
+            <ul class="options">
+              <li>
+                <input type="radio" name="q7" id="q7a" value="A" /><label
+                  for="q7a"
+                >
+                  A) Medida da quantidade de recursos naturais necessários para
+                  manter o sistema agrícola.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q7" id="q7b" value="B" /><label
+                  for="q7b"
+                >
+                  B) Cálculo do impacto ambiental das práticas agrícolas em
+                  termos de consumo de recursos e emissões.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q7" id="q7c" value="C" /><label
+                  for="q7c"
+                >
+                  C) Avaliação da eficiência econômica das práticas
+                  agrícolas.</label
+                >
+              </li>
+            </ul>
+            <button type="button" class="submit-btn" onclick="nextQuestion(7)">
+              Próxima Pergunta
+            </button>
+          </div>
+
+          <!-- Pergunta 8 - Difícil -->
+          <div class="question-container" id="questao8">
+            <div class="questao">
+              8. Como a técnica de "Integração Lavoura-Pecuária" contribui para
+              a sustentabilidade agrícola?
+            </div>
+            <ul class="options">
+              <li>
+                <input type="radio" name="q8" id="q8a" value="A" /><label
+                  for="q8a"
+                >
+                  A) Reduzindo a carga de nutrientes no solo e aumentando a
+                  produtividade geral.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q8" id="q8b" value="B" /><label
+                  for="q8b"
+                >
+                  B) Incrementando a produção animal e a produção de grãos em
+                  paralelo.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="q8" id="q8c" value="C" /><label
+                  for="q8c"
+                >
+                  C) Melhorando a eficiência da irrigação e do uso de
+                  fertilizantes.</label
+                >
+              </li>
+            </ul>
+            <button type="button" class="submit-btn" onclick="submitQuiz()">
+              Enviar Respostas
+            </button>
+          </div>
+        </form>
+        <div class="result" id="result"></div>
+        <button
+          class="restart-btn"
+          id="restartBtn"
+          onclick="restartQuiz()"
+          style="display: none"
+        >
+          Reiniciar Quiz
+        </button>
+      </div>
+    </main>
+    <script>
+      loadMenu("jogo.html");
+      showQuestion(currentQuestion);
+    </script>
+  </body>
+</html>
