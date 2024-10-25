@@ -72,3 +72,17 @@ border-right: 4px solid grey;border-bottom: 4px solid grey;}
 .controlClass img{width: 42.89px;height: 42.89px;}
 
 .controlInsideClick:hover{cursor: pointer;}
+
+
+
+
+
+
+
+@media (max-width: 604px) {
+    .organizeGame {margin-left: 150px;}
+}
+
+@media (max-width: 517px) {
+    .organizeGame {margin-left: 130px;}
+}
