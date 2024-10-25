@@ -27,6 +27,11 @@ body {
   margin-top: auto;
   padding: 20px;
 }
+@media (max-width: 480px) {
+  .meus-links img {
+    width: 150px;
+  }
+}
 
 .titulo-dicas {
   text-align: center;
