@@ -14,7 +14,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #a1d569;
+  background-color: #58706d;
   height: 100vh;
   border-radius: 0px 18px 18px 0px;
   position: fixed;
@@ -65,12 +65,12 @@ main {
 }
 
 .side-item.active {
-  background-color: #4c9145d7;
+  background-color: #4b5757;
 }
 
 .side-item:hover:not(.active),
 #logout_btn:hover {
-  background-color: #4d91457c;
+  background-color: #4b5757;
 }
 
 .side-item a {
@@ -115,7 +115,7 @@ main {
   position: absolute;
   top: 30px;
   right: -10px;
-  background-color: #4c9145d7;
+  background-color: #4b5757;
   color: #e3e9f7;
   border-radius: 100%;
   width: 20px;

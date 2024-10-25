@@ -2,23 +2,23 @@ body {
   min-height: 100vh;
   display: flex;
   font-family: Arial, sans-serif;
-  background-color: rgb(210, 218, 139);
+  background-color: #e3e3d1;
 }
 
 .detalhes-link {
-  color: #133a11;
+  color:#4b5757;
   text-decoration: none;
 }
 .detalhes-link:hover {
-  color: #12a708;
+  color: #000000;
 }
 .index-parte {
   margin: 4%;
-  color: #133a11;
+  color:#7c8a6e;
 }
 .titulo-index {
   text-align: center;
-  color: #1e6e19;
+  color: #272827;
 }
 .index-conteudo {
   text-indent: 2%;
@@ -27,16 +27,10 @@ body {
   margin-top: auto;
   padding: 20px;
 }
-.agrodefundo {
-  background-image: url(../media/AgroUrbano.svg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 150% 100%;
-  background-position-x: 43%;
-}
+
 .titulo-dicas {
   text-align: center;
-  color: #1e6e19;
+  color: #272827;
 }
 .dicas {
   display: flex;
@@ -93,9 +87,6 @@ body {
   .texto-dica{
     font-size: 15px;
   }
-}
-.cor-verde {
-  color: #0b2809;
 }
 .botao-cancelar-voltar{
   padding: 10px;
