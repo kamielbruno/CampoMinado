@@ -12,8 +12,15 @@ function rightClickMouse() {
 
         // Verifica se o elemento clicado tem a classe 'findTheRightSquare'
         if (event.target.classList.contains("findTheRightSquare")) {
+            // Verifica se o elemento já tem um valor específico (por exemplo, 'xx')
+            if (event.target.value === 'xx') {
+                console.log("Este elemento já foi clicado."); // Mensagem de aviso
+                return; // Evita que o código continue se o valor for 'xx'
+            }
+
             if (clickCount < maxClicks) { // Verifica se ainda não atingiu o limite de 10 cliques
                 event.target.src = newImagePath; // Substitui o atributo src pelo novo caminho
+                event.target.value = 'xx'; // Atribui o valor 'xx' ao elemento
                 clickCount++; // Incrementa a contagem de cliques
                 updateBandeira(); // Atualiza o display de contagem
             } else {
