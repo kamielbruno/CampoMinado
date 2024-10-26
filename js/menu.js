@@ -1,39 +1,16 @@
-// Função para carregar o menu dinamicamente
-function loadMenu(page) {
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", "../parte/menu.html", true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState == 4 && xhr.status == 200) {
-      document.getElementById("carregar-menu").innerHTML = xhr.responseText;
-      addMenuEventListeners();
-      updateMenu(page);
-    }
-  };
-  xhr.send();
-}
-// Função para adicionar eventos aos itens do menu
+// Adicionar eventos aos itens do menu
 function addMenuEventListeners() {
   var menuItems = document.querySelectorAll(".side-item");
   menuItems.forEach(function (item) {
     item.addEventListener("click", function () {
       var page = this.getAttribute("data-page");
+      updateMenu(page);
       loadContent(page);
     });
   });
+
   document.getElementById("open_btn").addEventListener("click", function () {
     document.getElementById("Barra-Lateral").classList.toggle("open-sidebar");
-  });
-}
-
-
-// Função para atualizar o menu com base na página atual
-function updateMenu(page) {
-  var menuItems = document.querySelectorAll(".side-item");
-  menuItems.forEach(function (item) {
-    item.classList.remove("active");
-    if (item.getAttribute("data-page") === page) {
-      item.classList.add("active");
-    }
   });
 }
 
@@ -49,3 +26,8 @@ function loadContent(page) {
   };
   xhr.send();
 }
+
+// Adicionar eventos ao carregar a página
+document.addEventListener("DOMContentLoaded", function () {
+  addMenuEventListeners();
+});
